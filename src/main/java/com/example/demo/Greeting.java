@@ -2,19 +2,41 @@ package com.example.demo;
 
 public class Greeting {
 
-	private final long id;
-	private final String content;
+	
+	private long id;
 
-	public Greeting(long id, String content) {
+	private String firstName;
+
+	private String lastName;
+
+	public Greeting(long id, String firstName, String lastName) {
 		this.id = id;
-		this.content = content;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 
 	public long getId() {
 		return id;
 	}
 
-	public String getContent() {
-		return content;
+	public void setId(long id) {
+		this.id = id;
 	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 }
